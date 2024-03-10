@@ -8,6 +8,12 @@ df, meta = pyreadstat.read_sav('data/BrexitAttitudes_Data.sav')
 
 print("start")
 
+# Export DataFrame to a CSV file
+csv_file_path = 'output.csv'
+df.to_csv(csv_file_path, index=False)
+
+print("next")
+
 # # Print variable names
 # print(meta.column_names)
 
@@ -19,7 +25,7 @@ print("start")
 
 
 # Print top 5 rows
-# print(df.head())
+print(df.head())
 
 # Histograms
 # df.hist(figsize=(15,15))
@@ -65,3 +71,6 @@ plt.xticks(rotation=45)
 plt.legend(title='EU Referendum Vote')
 plt.tight_layout()
 plt.show()
+
+
+
