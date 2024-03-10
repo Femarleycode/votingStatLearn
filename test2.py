@@ -8,12 +8,6 @@ df, meta = pyreadstat.read_sav('data/BrexitAttitudes_Data.sav')
 
 print("start")
 
-# Export DataFrame to a CSV file
-csv_file_path = 'output.csv'
-df.to_csv(csv_file_path, index=False)
-
-print("next")
-
 # # Print variable names
 # print(meta.column_names)
 
